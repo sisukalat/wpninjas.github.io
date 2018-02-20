@@ -39,8 +39,8 @@
       <section>
 
       {{ content }}
-        
-      {% for doc in site.docs sort: 'order' %}
+      {% assign docs = site.docs | sort: 'order' %}  
+      {% for doc in docs %}
         {{ doc.content }}
       {% endfor %}
 
