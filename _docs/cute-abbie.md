@@ -5,6 +5,7 @@ author: kevin
 permalink: /cute-abbie/
 source-id: 1S1UoN6_vPqJLypSm4M4tHSbTM7HTsiXiFe2_tgVMnCE
 published: true
+order: 3
 ---
 This is some test stuff. I'm a testing boy.
 
