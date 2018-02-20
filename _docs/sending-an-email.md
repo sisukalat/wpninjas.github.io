@@ -1,4 +1,4 @@
 ---
-title: Blogging Like a Hacker
+title: Setting Up A Ninja Forms Email Action
 ---
 # My test collection
