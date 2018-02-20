@@ -1,3 +1,7 @@
 theme: jekyll-theme-minimal
+collections_dir: docs
 collections:
-  docs
+  actions
+  addons
+  builder
+  settings
