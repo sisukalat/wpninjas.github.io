@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
 collections:
-  - docs
+  docs:
+    output: true
+    permalink: /docs/:path/
