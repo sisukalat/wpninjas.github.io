@@ -6,8 +6,6 @@ permalink: /building-your-form/
 source-id: 1sfTmYuwGIkeygMaUe3lnQgxq6GWVnUQ3dzNLjutcHyk
 published: true
 ---
-## **Creating the Form**
-
 In your WordPress dashboard, click "Add New" under the "Forms" menu. (You can also click "Add New Form" on your "All Forms" page.)
 
 ![image alt text]({{ site.url }}/public/MlnP0WDzJpEQ9xTYbwQcfA_img_0.png)
