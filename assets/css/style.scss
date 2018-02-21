@@ -2,6 +2,24 @@
 ---
 
 // @import "{{ site.theme }}";
-h1 {
-	color: red;
+h2 {
+    color: red;
+}
+.container {
+    display: flex;
+}
+nav {
+    flex-basis: 40%;
+    min-width: 240px;
+}
+.row {
+    display: flex;
+    .col {
+        flex-grow: 1;
+        flex-basis: 50%;
+        padding: 20px;
+    }
+    img {
+        width: 100%;
+    }
 }

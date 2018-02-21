@@ -15,7 +15,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <!-- 
+        <!--
         <a href="{{ site.github.url }}"> <h1>{{ site.title | default: site.github.repository_name }}</h1> </a>
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
@@ -36,30 +36,29 @@
         {% endif %}
         -->
       </header>
-      <section>
+      <div class="container">
+        <!-- Sidebar -->
+        <nav>
+          <ul>
+          {% for doc in site.builder %}
+            {% for section in doc.sections %}
+              <li><a href="#{{ section.slug }}">{{ section.name }}</a></li>
+            {% endfor %}
+          {% endfor %}
+          </ul>
+        </nav>
+        <!-- End Sidebar -->
+        <section>
 
-      {{ content }}
-        
-      <!-- Sidebar -->
-      <ul>
-      {% for doc in site.builder %}
-        {% for section in doc.sections %}
-          <li><a href="#{{ section.slug }}">{{ section.name }}</a></li>
+        {{ content }}
+        {% for doc in site.builder %}
+          <div id="{{ doc.id }}">
+<!--           <h2>{{ doc.title }}</h2> -->
+          {{ doc.content }}
+          <div>
         {% endfor %}
-      {% endfor %}
-      <!-- End Sidebar -->
-      </ul>
 
-
-      <h1>Builder</h1>
-      {% for doc in site.builder %}
-        <div id="{{ doc.id }}">
-        <h2>{{ doc.title }}</h2>
-        {{ doc.content }}
-        <div>
-      {% endfor %}
-
-      </section>
+        </section>
       <footer>
 
       </footer>
@@ -68,7 +67,7 @@
     <script
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-        crossorigin="anonymous"></script>    
+        crossorigin="anonymous"></script>
     <!--<script src="{{ '/assets/js/page.js' | relative_url }}"></script>-->
 
 
