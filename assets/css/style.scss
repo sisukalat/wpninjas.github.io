@@ -3,10 +3,29 @@
 
 // @import "{{ site.theme }}";
 body {
+    font-family: Helvetica Neue, sans-serif;
     margin: 0;
 }
 h2 {
-    color: red;
+    color: #424242;
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 36px;
+    font-weight: 200;
+    letter-spacing: 3px;
+}
+h3 {
+    color: #EE494C;
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+h4 {
+    color: #424242;
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
 .container {
     display: flex;
@@ -17,11 +36,27 @@ nav {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 240px;
+    padding: 20px;
+    a {
+        color: #424242;
+        text-decoration: none;
+    }
     ul {
         margin: 0;
         padding: 0;
+        position: fixed;
         li {
-            list-type: none;
+            font-size: 18px;
+            font-weight: bold;
+            list-style-type: none;
+            padding: 4px 0;
+            li {
+                font-weight: normal;
+                margin-left: 10px;
+                li {
+                    font-style: italic;
+                }
+            }
         }
     }
 }
@@ -50,6 +85,7 @@ section {
 }
 .row {
     display: flex;
+    margin-bottom: 20px;
     .col {
         flex-grow: 1;
         flex-basis: 50%;
@@ -61,6 +97,7 @@ section {
         }
     }
     img {
+        border: 1px solid #ccc;
         width: 100%;
     }
 }
