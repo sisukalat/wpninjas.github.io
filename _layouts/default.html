@@ -40,10 +40,23 @@
 
       {{ content }}
         
+      <!-- Sidebar -->
+      <ul>
+      {% for doc in site.builder %}
+        {% for section in doc.sections %}
+          <li><a href="#{{ section.slug }}">{{ section.name }}</a></li>
+        {% endfor %}
+      {% endfor %}
+      <!-- End Sidebar -->
+      </ul>
+
+
       <h1>Builder</h1>
       {% for doc in site.builder %}
+        <div id="{{ doc.id }}">
         <h2>{{ doc.title }}</h2>
         {{ doc.content }}
+        <div>
       {% endfor %}
 
       </section>
