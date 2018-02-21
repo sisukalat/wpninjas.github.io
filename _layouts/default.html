@@ -40,29 +40,33 @@
         <!-- Sidebar -->
         <nav>
           <ul>
-          {% for doc in site.builder %}
-            {% for section in doc.sections %}
-              <li>
-                <a href="#{{ section.slug }}">{{ section.name }}</a>
-                {% if section.sections != null %}
-                  <ul>
-                  {% for sub_section in section.sections %}
-                      <li>
-                        <a href="#{{ sub_section.slug }}">{{ sub_section.name }}</a>
-                      </li>                
-                  {% endfor %}
-                  </ul>
-                {% endif %}
-              </li>
-            {% endfor %}
-          {% endfor %}
+            <li><a href="#building-forms">Building Forms</a>
+              <ul>
+              {% for doc in site.builder %}
+                {% for section in doc.sections %}
+                  <li>
+                    <a href="#{{ section.slug }}">{{ section.name }}</a>
+                    {% if section.sections != null %}
+                      <ul>
+                      {% for sub_section in section.sections %}
+                          <li>
+                            <a href="#{{ sub_section.slug }}">{{ sub_section.name }}</a>
+                          </li>
+                      {% endfor %}
+                      </ul>
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              {% endfor %}
+              </ul>
+            </li>
           </ul>
         </nav>
         <!-- End Sidebar -->
         <section>
           <div class="bg-layer">
-            <div class="col">.</div>
-            <div class="col">.</div>
+            <div class="col"></div>
+            <div class="col"></div>
           </div>
         {{ content }}
         {% for doc in site.builder %}
