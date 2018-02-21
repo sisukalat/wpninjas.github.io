@@ -7,8 +7,11 @@ sections:
     name: Using A Template
   - slug: building-from-scratch
     name: Building From Scratch
-  - slug: adding-fields
-    name: Adding Fields
+    sections:
+      - slug: adding-fields
+        name: Adding Fields
+      - slug: editing-field-settings
+        name: Editing Field Settings
 ---
 <!-- img_url is dynamically built. The "assign ...." line shouldn't be edited. -->
 {% assign img_url = site.url | append: '/assets/img/' | append: page.slug %}
@@ -67,7 +70,7 @@ sections:
     </div>
 </div>
 
-<h4 id="adding-fields">Editing Field Settings</h4>
+<h4 id="editing-field-settings">Editing Field Settings</h4>
 
 <div class="row">
     <div class="col">
