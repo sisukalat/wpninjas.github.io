@@ -5,7 +5,7 @@
     "gulp": "gulp"
   },
   "dependencies": {
-    "gulp-cheerio": "^0.6.3",
+    "gulp-cheerio": "^0.6.3"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
