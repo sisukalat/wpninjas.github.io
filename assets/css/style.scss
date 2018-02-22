@@ -3,6 +3,7 @@
 
 // @import "{{ site.theme }}";
 body {
+    background: #fff !important;
     font-family: Helvetica Neue, sans-serif;
     margin: 0;
 }
@@ -27,39 +28,42 @@ h4 {
     font-weight: 800;
     letter-spacing: 1px;
 }
-.container {
+.wrapper {
     display: flex;
     justify-content: space-around;
-}
-nav {
-    background: #f1f1f1;
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 240px;
-    padding: 20px;
-    a {
-        color: #424242;
-        text-decoration: none;
-    }
-    ul {
-        margin: 0;
-        padding: 0;
-        position: fixed;
-        li {
-            font-size: 18px;
-            font-weight: bold;
-            list-style-type: none;
-            padding: 4px 0;
+    padding-top: 136px;
+    nav {
+        background: #f1f1f1;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 240px;
+        padding: 20px;
+        a {
+            color: #424242;
+            text-decoration: none;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            position: fixed;
             li {
-                font-weight: normal;
-                margin-left: 10px;
+                font-size: 16px;
+                font-weight: bold;
+                list-style-type: none;
+                padding: 4px 0;
                 li {
-                    font-style: italic;
+                    font-weight: normal;
+                    margin-left: 10px;
+                    li {
+                        display: none;
+                        font-style: italic;
+                    }
                 }
             }
         }
     }
 }
+
 section {
     flex-basis: auto;
     padding: 20px;
@@ -85,7 +89,7 @@ section {
 }
 .row {
     display: flex;
-    margin-bottom: 20px;
+    margin: 0 0 20px !important;
     .col {
         flex-grow: 1;
         flex-basis: 50%;
@@ -97,7 +101,7 @@ section {
         }
     }
     img {
-        border: 1px solid #ccc;
+        border: 2px solid #ccc;
         width: 100%;
     }
 }
