@@ -59,6 +59,9 @@ h4 {
                 li {
                     font-weight: normal;
                     margin-left: 10px;
+                    ul.sub-section {
+                        display: none;
+                    }
                     li {
                         // display: none;
                         font-style: italic;
