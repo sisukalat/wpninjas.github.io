@@ -86,7 +86,7 @@
                   <li>
                     <a href="#{{ section.slug }}">{{ section.name }}</a>
                     {% if section.sections != null %}
-                      <ul>
+                      <ul class="sub-section">
                       {% for sub_section in section.sections %}
                           <li>
                             <a href="#{{ sub_section.slug }}">{{ sub_section.name }}</a>
