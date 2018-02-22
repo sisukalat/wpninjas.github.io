@@ -1,20 +1,23 @@
 ---
-title: false
+title: Configuring Actions
 tags: templates, fields
-slug: false
+slug: configuring-actions
 sections:
-  - slug: field-types
-    name: Field Types
-    sections:
-      - slug: textbox
-        name: Textbox
-      - slug: select-dropdown
-        name: Select (Dropdown)
-  - slug: some-other-thing
-    name: Some other thing
+  - slug: sending-recieving-emails
+    name: Sending &amp; Recieving Emails
+  - slug: save-forms-submissions
+    name: Save Forms Submissions
+  - slug: redirect-the-user
+    name: Redirect the User
+  - slug: display-a-success-message
+    name: Display a Success Message
+  - slug: other-actions
+    name: Other Actions
 ---
 <!-- Content Starts Below This Line -->
-<h3 id="field-types">Field Types</h3>
+<h2 id="configuring-actions">Configuring Actions</h2>
+
+<h3 id="sending-recieving-emails">Sending &amp; Recieving Emails</h3>
 
 <div class="row">
     <div class="col">
@@ -25,7 +28,7 @@ sections:
     </div>
 </div>
 
-<h4 id="textbox">Textbox</h4>
+<h3 id="save-forms-submissions">Save Forms Submissions</h3>
 
 <div class="row">
     <div class="col">
@@ -36,7 +39,7 @@ sections:
     </div>
 </div>
 
-<h4 id="select-dropdown">Select (Dropdown)</h4>
+<h3 id="redirect-the-user">Redirect the User</h3>
 
 <div class="row">
     <div class="col">
@@ -47,7 +50,7 @@ sections:
     </div>
 </div>
 
-<h3 id="some-other-thing">Some other thing</h3>
+<h3 id="display-a-success-message">Display a Success Message</h3>
 
 <div class="row">
     <div class="col">
@@ -57,3 +60,5 @@ sections:
         <img src="{{ site_url }}/assets/img/{{ page.slug }}/MlnP0WDzJpEQ9xTYbwQcfA_img_5.png">
     </div>
 </div>
+
+<h3 id="other-actions">Other Actions</h3>

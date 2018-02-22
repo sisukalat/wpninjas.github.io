@@ -3,28 +3,33 @@ title: Building Forms
 tags: templates, fields
 slug: building-forms
 sections:
-  - slug: using-a-template
-    name: Using a Template
-  - slug: building-from-scratch
-    name: Building from Scratch
+  - slug: form-templates
+    name: Form Templates
+  - slug: adding-fields
+    name: Adding Fields
     sections:
-      - slug: adding-fields
-        name: Adding Fields
-      - slug: editing-field-settings
-        name: Editing Field Settings
-      - slug: duplicating-or-deleting-fields
-        name: Duplicating or Deleting Fields
-      - slug: preview-the-form
-        name: Preview the Form
-      - slug: publish-the-form
-        name: Publish the Form
-  - slug: tips-and-tricks
-    name: Tips and Tricks
+      - slug: building-form-layouts
+        name: Building Form Layouts
+      - slug: field-types
+        name: Field Types
+  - slug: field-settings
+    name: Field Settings
     sections:
-      - slug: undo-recent-changes
-        name: Undo Recent Changes
-      - slug: save-a-field-to-reuse-later
-        name: Save a Field to Reuse Later
+      - slug: saving-fields
+        name: Saving Fields
+  - slug: advanced-settings
+    name: Advanced Settings
+    sections:
+      - slug: forms-display
+        name: Forms Display
+      - slug: restrictions
+        name: Restrictions
+      - slug: calculations
+        name: Calculations
+      - slug: conditional-logic
+        name: Conditional Logic
+      - slug: forms-styles
+        name: Forms Styles
 ---
 <!-- Content Starts Below This Line -->
 <h2 id="building-forms">Building Forms</h2>
@@ -38,7 +43,7 @@ sections:
     </div>
 </div>
 
-<h3 id="using-a-template">Using a Template</h3>
+<h3 id="form-templates">Form Templates</h3>
 
 <div class="row">
     <div class="col">
@@ -49,9 +54,7 @@ sections:
     </div>
 </div>
 
-<h3 id="building-from-scratch">Building from Scratch</h3>
-
-<h4 id="adding-fields">Adding Fields</h4>
+<h3 id="adding-fields">Adding Fields</h3>
 
 <div class="row">
     <div class="col">
@@ -80,40 +83,7 @@ sections:
     </div>
 </div>
 
-<h4 id="editing-field-settings">Editing Field Settings</h4>
-
-<div class="row">
-    <div class="col">
-        To change the field label, label placement, force a field to be required and more simply click on the field to open its settings drawer.  You may also click the blue gear icon to open the field settings drawer.  This drawer is different for each field type.  For a detailed breakdown of field types,[ see the documentation here](https://ninjaforms.com/docs/field-types/).
-    </div>
-    <div class="col">
-        <img src="{{ site_url }}/assets/img/{{ page.slug }}/MlnP0WDzJpEQ9xTYbwQcfA_img_5.png">
-    </div>
-</div>
-
-<h4 id="duplicating-or-deleting-fields">Duplicating or Deleting Fields</h4>
-
-<div class="row">
-    <div class="col">
-        Hover over the blue gear icon in each field to expand the duplicate and delete icons.
-    </div>
-    <div class="col">
-        <img src="{{ site_url }}/assets/img/{{ page.slug }}/MlnP0WDzJpEQ9xTYbwQcfA_img_6.png">
-    </div>
-</div>
-
-<h4 id="preview-the-form">Preview the Form</h4>
-
-<div class="row">
-    <div class="col">
-        Preview any form changes *without impacting users on the front end of your site* with the preview button here:
-    </div>
-    <div class="col">
-        <img src="{{ site_url }}/assets/img/{{ page.slug }}/MlnP0WDzJpEQ9xTYbwQcfA_img_7.png">
-    </div>
-</div>
-
-<h4 id="publish-the-form">Publish the Form</h4>
+<h4 id="building-form-layouts">Building Form Layouts</h4>
 
 <div class="row">
     <div class="col">
@@ -121,19 +91,6 @@ sections:
     </div>
     <div class="col">
         <img src="{{ site_url }}/assets/img/{{ page.slug }}/MlnP0WDzJpEQ9xTYbwQcfA_img_8.png">
-    </div>
-</div>
-
-<h3 id="tips-and-tricks">Tips and Tricks</h3>
-
-<h4 id="undo-recent-changes">Undo Recent Changes</h4>
-
-<div class="row">
-    <div class="col">
-        Next to the publish button, click the &quot;Rewind&quot; icon to open the Undo Manager.
-    </div>
-    <div class="col">
-        <img src="{{ site_url }}/assets/img/{{ page.slug }}/MlnP0WDzJpEQ9xTYbwQcfA_img_9.png">
     </div>
 </div>
 
@@ -146,22 +103,58 @@ sections:
     </div>
 </div>
 
-<h4 id="save-a-field-to-reuse-later">Save a Field to Reuse Later</h4>
+<h4 id="field-types">Field Types</h4>
 
 <div class="row">
     <div class="col">
-        To save all field settings including label, list values, styling classes, and more to reuse later, click the &quot;star&quot; icon in the field settings drawer.  That will add a copy of your field to the &quot;Add Field&quot; drawer to be added to the current form (or even a different form) at a later time.
+        <h5 id="textbox">Textbox</h5>
+        Hover over the blue gear icon in each field to expand the duplicate and delete icons.
     </div>
     <div class="col">
-        <img src="{{ site_url }}/assets/img/{{ page.slug }}/MlnP0WDzJpEQ9xTYbwQcfA_img_11.png">
+        <img src="{{ site_url }}/assets/img/{{ page.slug }}/MlnP0WDzJpEQ9xTYbwQcfA_img_6.png">
     </div>
 </div>
 
 <div class="row">
     <div class="col">
-        The field appears in the &quot;Add Field&quot; drawer:
+        <h5 id="paragraph-text">Paragraph Text</h5>
+        Hover over the blue gear icon in each field to expand the duplicate and delete icons.
     </div>
     <div class="col">
-        <img src="{{ site_url }}/assets/img/{{ page.slug }}/MlnP0WDzJpEQ9xTYbwQcfA_img_12.png">
+        <img src="{{ site_url }}/assets/img/{{ page.slug }}/MlnP0WDzJpEQ9xTYbwQcfA_img_6.png">
     </div>
 </div>
+
+<h3 id="field-settings">Field Settings</h3>
+
+<div class="row">
+    <div class="col">
+        To change the field label, label placement, force a field to be required and more simply click on the field to open its settings drawer.  You may also click the blue gear icon to open the field settings drawer.  This drawer is different for each field type.  For a detailed breakdown of field types,[ see the documentation here](https://ninjaforms.com/docs/field-types/).
+    </div>
+    <div class="col">
+        <img src="{{ site_url }}/assets/img/{{ page.slug }}/MlnP0WDzJpEQ9xTYbwQcfA_img_5.png">
+    </div>
+</div>
+
+<h4 id="saving-fields">Saving Fields</h4>
+
+<div class="row">
+    <div class="col">
+        Preview any form changes *without impacting users on the front end of your site* with the preview button here:
+    </div>
+    <div class="col">
+        <img src="{{ site_url }}/assets/img/{{ page.slug }}/MlnP0WDzJpEQ9xTYbwQcfA_img_7.png">
+    </div>
+</div>
+
+<h3 id="advanced-settings">Advanced Settings</h3>
+
+<h4 id="forms-display">Forms Display</h4>
+
+<h4 id="restrictions">Restrictions</h4>
+
+<h4 id="calculations">Calculations</h4>
+
+<h4 id="conditional-logic">Conditional Logic</h4>
+
+<h4 id="forms-styles">Forms Styles</h4>
