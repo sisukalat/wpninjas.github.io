@@ -41,6 +41,9 @@ h4 {
         a {
             color: #424242;
             text-decoration: none;
+            &.active {
+                color: #EE494C;
+            }
         }
         > ul {
             position: fixed;
