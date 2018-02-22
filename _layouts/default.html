@@ -76,7 +76,7 @@
       </header>-->
       <div class="wrapper">
         <!-- Sidebar -->
-        <nav>
+        <nav class="sidebar">
           <ul>
             <li><a href="#building-forms">Building Forms</a>
               <ul>
@@ -121,10 +121,11 @@
     </div>
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
     <script
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-        crossorigin="anonymous"></script>
-    <!--<script src="{{ '/assets/js/page.js' | relative_url }}"></script>-->
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script src="{{ '/assets/js/page.js' | relative_url }}"></script>
 
 
   {% if site.google_analytics %}
