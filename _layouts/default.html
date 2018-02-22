@@ -80,7 +80,8 @@
           <ul>
             <li><a href="#building-forms">Building Forms</a>
               <ul>
-              {% for doc in site.builder %}
+            {% assign builder = 'builder' %}
+              {% for doc in site[ builder ] %}
                 {% for section in doc.sections %}
                   <li>
                     <a href="#{{ section.slug }}">{{ section.name }}</a>
@@ -109,8 +110,7 @@
         {{ content }}
         {% for doc in site.builder %}
           <div id="{{ doc.id }}">
-<!--           <h2>{{ doc.title }}</h2> -->
-          {{ doc.content }}
+            {{ doc.content }}
           <div>
         {% endfor %}
 
