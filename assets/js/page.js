@@ -3,8 +3,11 @@ jQuery( document ).ready( function( $ ) {
 
     $( '.sidebar a' ).click(function( event ) {
         event.preventDefault();
-        $( 'html, body' ).animate( { scrollTop: $( $( this).attr( 'href' ) ).offset().top - 150 }, 500 );
+        var headerHeight = $( '#top' ).outerHeight() + 20;
+        $( 'html, body' ).animate( { scrollTop: $( $( this).attr( 'href' ) ).offset().top - headerHeight }, 500 );
     } );
+
+    $( '.sidebar a:first' ).addClass( 'active' );
 } );
 
 function onScroll( event ){
