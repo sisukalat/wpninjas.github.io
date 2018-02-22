@@ -99,6 +99,28 @@
               {% endfor %}
               </ul>
             </li>
+
+            <li><a href="#configuring-actions">Configuring Actions</a>
+              <ul>
+            {% assign actions = 'actions' %}
+              {% for doc in site[ actions ] %}
+                {% for section in doc.sections %}
+                  <li>
+                    <a href="#{{ section.slug }}">{{ section.name }}</a>
+                    {% if section.sections != null %}
+                      <ul class="sub-section">
+                      {% for sub_section in section.sections %}
+                          <li>
+                            <a href="#{{ sub_section.slug }}">{{ sub_section.name }}</a>
+                          </li>
+                      {% endfor %}
+                      </ul>
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              {% endfor %}
+              </ul>
+            </li>
           </ul>
         </nav>
         <!-- End Sidebar -->
@@ -109,6 +131,12 @@
           </div>
         {{ content }}
         {% for doc in site.builder %}
+          <div id="{{ doc.id }}">
+            {{ doc.content }}
+          <div>
+        {% endfor %}
+
+        {% for doc in site.actions %}
           <div id="{{ doc.id }}">
             {{ doc.content }}
           <div>
