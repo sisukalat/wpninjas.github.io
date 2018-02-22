@@ -17,6 +17,19 @@ sections:
     sections:
       - slug: saving-fields
         name: Saving Fields
+  - slug: advanced-settings
+    name: Advanced Settings
+    sections:
+      - slug: forms-display
+        name: Forms Display
+      - slug: restrictions
+        name: Restrictions
+      - slug: calculations
+        name: Calculations
+      - slug: conditional-logic
+        name: Conditional Logic
+      - slug: forms-styles
+        name: Forms Styles
 ---
 <!-- Content Starts Below This Line -->
 <h2 id="building-forms">Building Forms</h2>
@@ -92,10 +105,9 @@ sections:
 
 <h4 id="field-types">Field Types</h4>
 
-<h5 id="textbox">Textbox</h5>
-
 <div class="row">
     <div class="col">
+        <h5 id="textbox">Textbox</h5>
         Hover over the blue gear icon in each field to expand the duplicate and delete icons.
     </div>
     <div class="col">
@@ -103,10 +115,9 @@ sections:
     </div>
 </div>
 
-<h5 id="paragraph-text">Paragraph Text</h5>
-
 <div class="row">
     <div class="col">
+        <h5 id="paragraph-text">Paragraph Text</h5>
         Hover over the blue gear icon in each field to expand the duplicate and delete icons.
     </div>
     <div class="col">
@@ -135,3 +146,15 @@ sections:
         <img src="{{ site_url }}/assets/img/{{ page.slug }}/MlnP0WDzJpEQ9xTYbwQcfA_img_7.png">
     </div>
 </div>
+
+<h3 id="advanced-settings">Advanced Settings</h3>
+
+<h4 id="forms-display">Forms Display</h4>
+
+<h4 id="restrictions">Restrictions</h4>
+
+<h4 id="calculations">Calculations</h4>
+
+<h4 id="conditional-logic">Conditional Logic</h4>
+
+<h4 id="forms-styles">Forms Styles</h4>

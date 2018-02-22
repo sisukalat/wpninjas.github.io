@@ -5,6 +5,7 @@
 body {
     background: #fff !important;
     font-family: Helvetica Neue, sans-serif;
+    font-size: 16px;
     margin: 0;
 }
 h2 {
@@ -25,6 +26,13 @@ h4 {
     color: #424242;
     font-family: Helvetica Neue, sans-serif;
     font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+h5 {
+    color: #666;
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 16px;
     font-weight: 800;
     letter-spacing: 1px;
 }
@@ -55,7 +63,7 @@ h4 {
                 font-size: 16px;
                 font-weight: bold;
                 list-style-type: none;
-                padding: 2px 0;
+                padding: 1px 0;
                 li {
                     font-weight: normal;
                     margin-left: 16px;
@@ -66,7 +74,7 @@ h4 {
                         // display: none;
                         font-size: 12px;
                         font-style: italic;
-                        padding: 2px 0;
+                        padding: 1px 0;
                     }
                 }
             }
