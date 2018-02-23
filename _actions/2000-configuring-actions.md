@@ -3,6 +3,8 @@ title: Configuring Actions
 tags: templates, fields
 slug: configuring-actions
 sections:
+  - slug: adding-actions
+    name: Adding Actions
   - slug: sending-recieving-emails
     name: Sending &amp; Recieving Emails
   - slug: save-forms-submissions
@@ -16,6 +18,17 @@ sections:
 ---
 <!-- Content Starts Below This Line -->
 <h2 id="configuring-actions">Configuring Actions</h2>
+
+<h3 id="adding-actions">Adding Actions</h3>
+
+<div class="row">
+    <div class="col">
+        In your WordPress dashboard, click &quot;Add New&quot; under the &quot;Forms&quot; menu. (You can also click &quot;Add New Form&quot; on your &quot;All Forms&quot; page.)
+    </div>
+    <div class="col">
+        <img src="{{ site_url }}/assets/img/{{ page.slug }}/MlnP0WDzJpEQ9xTYbwQcfA_img_0.png">
+    </div>
+</div>
 
 <h3 id="sending-recieving-emails">Sending &amp; Recieving Emails</h3>
 
