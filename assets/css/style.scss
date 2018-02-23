@@ -36,6 +36,14 @@ h5 {
     font-weight: 800;
     letter-spacing: 1px;
 }
+h2, h3, h4 {
+    &:before {
+        content: "";
+        display: block;
+        height: 156px; /* fixed header height*/
+        margin: -156px 0 0; /* negative fixed header height */
+    }
+}
 .wrapper {
     display: flex;
     justify-content: space-around;

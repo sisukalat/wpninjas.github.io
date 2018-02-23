@@ -84,12 +84,12 @@
               {% for doc in site[ builder ] %}
                 {% for section in doc.sections %}
                   <li>
-                    <a href="#{{ section.slug }}">{{ section.name }}</a>
+                    <a href="#{{ section.slug }}" data-type="section" data-section="{{ section.slug }}">{{ section.name }}</a>
                     {% if section.sections != null %}
                       <ul class="sub-section">
                       {% for sub_section in section.sections %}
-                          <li class="h4-section">
-                            <a href="#{{ sub_section.slug }}">{{ sub_section.name }}</a>
+                          <li>
+                            <a href="#{{ sub_section.slug }}" data-section="{{ section.slug }}">{{ sub_section.name }}</a>
                           </li>
                       {% endfor %}
                       </ul>

@@ -1,28 +1,15 @@
+jQuery.fn.reverse = [].reverse;
+
 jQuery( document ).ready( function( $ ) {
 	$( document ).on( 'scroll', onScroll );
-
-    $( '.sidebar a' ).click(function( event ) {
-        event.preventDefault();
-        var target = $( $( this).attr( 'href' ) );
-        var headerHeight = $( '#top' ).outerHeight() + 10;
-        $( 'html, body' ).animate( { scrollTop: target.offset().top - headerHeight }, 500 );
-        target.focus(); // Setting focus
-        if (target.is(":focus")){ // Checking if the target was focused
-          return false;
-        } else {
-          target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-          target.focus(); // Setting focus
-        };
-    } );
-
     $( '.sidebar a:first' ).addClass( 'active' );
 } );
 
 function onScroll( event ){
     var scrollPos = $( document ).scrollTop() + 20;
-    var $headers = $( ':header' );
+    var $headers = $( 'h2, h3, h4' );
 
-    $( '.sidebar a' ).each( function () {
+    $( '.sidebar a' ).reverse().each( function() {
         var currLink = $( this );
         var refElement = $( currLink.attr( 'href' ) );
         /*
@@ -56,6 +43,21 @@ function onScroll( event ){
 			currLink.next( '.sub-section' ).slideDown();
         } else{
             currLink.removeClass( 'active' );
+
+            /*
+             * If this item is a section or second-level menu item.
+             */
+            if ( 'section' == currLink.data( 'type' ) ) {
+            	/*
+            	 * Select any items that belong within this section and have the active class.
+            	 */
+            	if ( 0 == $( '.active[data-section="' + currLink.data( 'section' ) + '"]' ).length ) {
+            		/*
+            		 * If no items are found, then hide this section's sub section.
+            		 */
+            		currLink.next( '.sub-section' ).slideUp();
+            	}
+            }
         }
    	});
 
